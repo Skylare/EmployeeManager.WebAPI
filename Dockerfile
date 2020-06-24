@@ -18,4 +18,5 @@ RUN dotnet publish "EmployeeManager.WebAPI.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+COPY ["employees.db", ""]
 ENTRYPOINT ["dotnet", "EmployeeManager.WebAPI.dll"]
