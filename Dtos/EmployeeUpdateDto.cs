@@ -23,6 +23,7 @@ namespace EmployeeManager.WebAPI.Dtos
         [Required]
         public Gender Gender { get; set; }
 
+        [Required]
         public int JobCategoryId { get; set; }
 
         [Required]
@@ -33,6 +34,7 @@ namespace EmployeeManager.WebAPI.Dtos
         [Phone]
         public string PhoneNumber { get; set; }
 
+        [Required]
         public int CountryId { get; set; }
 
         [Required]
